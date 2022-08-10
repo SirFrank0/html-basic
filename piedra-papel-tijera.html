@@ -5,19 +5,41 @@
         <title>Piedra, papel o tijera</title>
         <script>
             let jugador = 0
-            let pc = 2
+            let pc = 3
             jugador = prompt("Elige 1 para piedra, 2 para papel, 3 para tijera")
 
             //alert("Elegiste " + jugador)          Solo mostraria el numero escogido como cadena de texto
 
             if(jugador==1){
-                alert("Elegiste piedra")            //Se condicionan las opciones para que se muestren al usuario
+                alert("Elegiste 🥌")            //Se condicionan las opciones para que se muestren al usuario
             }   else if(jugador==2){
-                alert("Elegiste papel") 
+                alert("Elegiste 📃") 
             }   else if(jugador==3){
-                alert("Elegiste tijera") 
+                alert("Elegiste ✂") 
             } else {
-                alert("Elegiste PERDER") 
+                alert("Elegiste 💩") 
+            }
+
+            if(pc==1){
+                alert("PC elige 🥌")            //Se condicionan las opciones del pc
+            }   else if(pc==2){
+                alert("PC elige 📃") 
+            }   else if(pc==3){
+                alert("PC elige ✂")
+            }   
+            
+            //combate
+
+            if(pc==jugador){
+                alert("Empate 😑")
+            }   else if(jugador==1 && pc==3){
+                alert("Ganaste 🎉🎉🎉")
+            }   else if(jugador==2 && pc==1){
+                alert("Ganaste 🎉🎉🎉")
+            }   else if(jugador==3 && pc==2){
+                alert("Ganaste 🎉🎉🎉")
+            }   else {
+                alert("Perdiste 😥")
             }
         
         </script>
