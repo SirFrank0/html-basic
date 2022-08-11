@@ -5,7 +5,10 @@
         <title>Piedra, papel o tijera</title>
         <script>
             let jugador = 0
-            let pc = 3
+            let min = 1                                 //Se declaran variables minimas y maximas para la aleatoridad de la opcion del PC
+            let max = 3
+            let pc = Math.floor(Math.random()*(max-min+1) + min)    //formula para generar numeros aleatorios
+
             jugador = prompt("Elige 1 para piedra, 2 para papel, 3 para tijera")
 
             //alert("Elegiste " + jugador)          Solo mostraria el numero escogido como cadena de texto
@@ -39,12 +42,12 @@
             }   else if(jugador==3 && pc==2){
                 alert("Ganaste 🎉🎉🎉")
             }   else {
-                alert("Perdiste 😥")
+                alert("Perdiste 😥")                //coomen
             }
         
         </script>
     </head>
     <body>
-            <p>Probando editor github</p>
+            <h1>Piedra, papel y tijera</h1>
     </body>
 </html>
